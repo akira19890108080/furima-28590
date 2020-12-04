@@ -6,16 +6,18 @@
 | --------      | ------  | ----------- |
 | nickname      | string  | null: false |
 | email         | string  | null: false |
-| password      | string  | null: false |
-| name          | string  | null: false |
-| name katakana | string  | null: false |
-| birthday      | integer | null: false |
+| encrypted_password      | string  | null: false |
+| first_name          | string  | null: false |
+| last_name          | string  | null: false |
+| first_name_katakana | string  | null: false |
+| last_name_katakana | string  | null: false |
+| birthday      | date | null: false |
 
 Association
 
 - has_many :items
-- has_one  :buys
-- has_one  :Shipping address
+- has_many  :buys
+
 
 ## items テーブル
 
