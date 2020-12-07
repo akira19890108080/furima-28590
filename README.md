@@ -58,12 +58,12 @@ Association
 
 | Column            | Type          | Options                        |
 | ----------        | ----------    | ------------------------------ |
-| Postal code       | integer       | null: false                    |
-| Prefectures       | string        | null: false                    |
-| Municipality      | text          | null: false                    |
-| address           | text          | null: false                    |
-| Building name     | text          |                                |
-| phone number      | integer       | null: false                    |
+| Postal_code       | string        | null: false                    |
+| Prefectures_id    | integer       | null: false                    |
+| Municipality      | string        | null: false                    |
+| address           | string        | null: false                    |
+| Building_name     | string        |                                |
+| phone_number      | string        | null: false                    |
 | buy               | references    | null: false, foreign_key: true |
 
 Association
