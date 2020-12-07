@@ -5,7 +5,7 @@
 | Column        | Type    | Options     |
 | --------      | ------  | ----------- |
 | nickname      | string  | null: false |
-| email         | string  | null: false |
+| email         | string  | unique: true |
 | encrypted_password      | string  | null: false |
 | first_name          | string  | null: false |
 | last_name          | string  | null: false |
@@ -29,6 +29,11 @@ Association
 | delivery           | text       | null: false                    |
 | price              | integer    | null: false                    |
 | user               | references | null: false, foreign_key: true |
+| category           | integer    | null: false                    |
+| product condition  | integer    | null: false                    |
+| shipping charges   | integer    | null: false                    |
+| shipping area      | integer    | null: false                    |
+| days to ship       | integer    | null: false                    |
 
 Association
 
@@ -40,9 +45,6 @@ Association
 
 | Column    　　　| Type          | Options                        |
 | ----------　　　| ----------    | ------------------------------ |
-| card number    | integer       | null: false                    |
-| Deadline       | integer       | null: false                    |
-| security code  | integer       | null: false                    |
 | user           | references    | null: false, foreign_key: true |
 | item           | references    | null: false, foreign_key: true |
 
@@ -64,7 +66,6 @@ Association
 | Building name     | text          |                                |
 | phone number      | integer       | null: false                    |
 | user              | references    | null: false, foreign_key: true |
-| prototype         | references    | null: false, foreign_key: true |
 
 
 Association
