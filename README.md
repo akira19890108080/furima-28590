@@ -23,10 +23,7 @@ Association
 
 | Column                | Type       | Options                        |
 | ---------             | ---------- | ------------------------------ |
-| Product name          | string     | null: false                    |
-| Explanation           | text       | null: false                    |
-| Product Details       | text       | null: false                    |
-| delivery              | text       | null: false                    |
+| product_name          | string     | null: false                    |
 | price                 | integer    | null: false                    |
 | user                  | references | null: false, foreign_key: true |
 | category_id           | integer    | null: false                    |
@@ -58,11 +55,11 @@ Association
 
 | Column            | Type          | Options                        |
 | ----------        | ----------    | ------------------------------ |
-| Postal_code       | string        | null: false                    |
-| Prefectures_id    | integer       | null: false                    |
-| Municipality      | string        | null: false                    |
+| postal_code       | string        | null: false                    |
+| prefectures_id    | integer       | null: false                    |
+| municipality      | string        | null: false                    |
 | address           | string        | null: false                    |
-| Building_name     | string        |                                |
+| building_name     | string        |                                |
 | phone_number      | string        | null: false                    |
 | buy               | references    | null: false, foreign_key: true |
 
